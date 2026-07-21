@@ -1,0 +1,67 @@
+[
+{
+  "id": "record-management-system",
+
+  "title": "Record Management System",
+
+  "category": "Systems",
+
+  "status": "Completed",
+
+  "difficulty": "Advanced",
+
+  "year": "2024",
+
+  "client": "Revolutionary Union (RU)",
+
+  "duration": "6 Months",
+
+  "role": "Full Stack Developer",
+
+  "tech":[
+    "PHP",
+    "MySQL",
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+
+  "description":"A complete web-based Record Management System built for Revolutionary Union (RU) to efficiently manage members, records and organizational operations.",
+
+  "problem":"The organization relied on paper records and spreadsheets, making it difficult to track members, retrieve records quickly and maintain accurate information.",
+
+  "solution":"Designed and developed a secure web application with role-based authentication, centralized record storage, powerful search functionality and a user-friendly dashboard.",
+
+  "outcome":"The system improved record accessibility, reduced paperwork and simplified daily administrative tasks.",
+
+  "features":[
+    "Secure Login",
+    "Role Management",
+    "CRUD Operations",
+    "Member Management",
+    "Search Records",
+    "Dashboard",
+    "Responsive Design",
+    "Data Validation"
+  ],
+
+  "learning":[
+    "PHP Sessions",
+    "Database Relationships",
+    "CRUD Design",
+    "Authentication",
+    "System Architecture",
+    "Responsive UI"
+  ],
+
+  "github":"",
+
+  "demo":"",
+
+  "images":[
+    "images/projects/record-system/1.png",
+    "images/projects/record-system/2.png",
+    "images/projects/record-system/3.png"
+  ]
+}
+]
