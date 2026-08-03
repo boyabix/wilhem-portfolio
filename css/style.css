@@ -2177,3 +2177,271 @@ right:40px;
 .gallery-title{
     margin:60px 0 25px;
 }
+/*==============================
+PREMIUM PROJECT PAGE
+===============================*/
+
+.project-page{
+    padding:120px 10%;
+    min-height:100vh;
+}
+
+.back-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 28px;
+    background:#00D9FF;
+    color:#07131F;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    margin-bottom:40px;
+    transition:.35s;
+}
+
+.back-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 30px rgba(0,217,255,.35);
+}
+
+.project-banner{
+    position:relative;
+    height:520px;
+    border-radius:30px;
+    overflow:hidden;
+    margin-bottom:70px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.project-banner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(.35);
+}
+
+.banner-overlay{
+    position:absolute;
+    left:60px;
+    bottom:60px;
+    max-width:720px;
+}
+
+.status-badge{
+    display:inline-block;
+    padding:10px 22px;
+    background:#00D9FF;
+    color:#07131F;
+    border-radius:40px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.banner-overlay h1{
+    font-size:58px;
+    margin-bottom:16px;
+}
+
+.banner-overlay p{
+    font-size:18px;
+    color:#CBD5E1;
+    line-height:1.8;
+    margin-bottom:22px;
+}
+
+.project-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.project-tags span{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.08);
+    padding:10px 18px;
+    border-radius:30px;
+}
+
+.project-info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin:60px 0;
+}
+
+.info-box{
+    background:rgba(16,24,39,.82);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:30px;
+    text-align:center;
+    transition:.35s;
+}
+
+.info-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 30px rgba(0,217,255,.18);
+}
+
+.info-box i{
+    font-size:36px;
+    color:#00D9FF;
+    margin-bottom:16px;
+}
+
+.case-study{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin:70px 0;
+}
+
+.case-card{
+    background:rgba(16,24,39,.82);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:34px;
+}
+
+.case-card h2{
+    color:#00D9FF;
+    margin-bottom:18px;
+}
+
+.case-card p{
+    color:#CBD5E1;
+    line-height:1.8;
+}
+
+.gallery-title{
+    margin:60px 0 25px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    margin-bottom:60px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:22px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.gallery-item img{
+    width:100%;
+    display:block;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.08);
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:30px;
+    margin:50px 0;
+}
+
+.project-box{
+    background:rgba(16,24,39,.82);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:34px;
+}
+
+.project-box h2{
+    margin-bottom:20px;
+}
+
+.project-box ul{
+    padding-left:20px;
+}
+
+.project-box li{
+    margin-bottom:12px;
+    color:#CBD5E1;
+}
+
+.project-actions{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.lightbox{
+    display:none;
+    justify-content:center;
+    align-items:center;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.94);
+    z-index:9999;
+}
+
+.lightbox img{
+    max-width:85%;
+    max-height:85%;
+    border-radius:20px;
+    box-shadow:0 0 60px rgba(0,217,255,.3);
+}
+
+.close-lightbox{
+    position:absolute;
+    top:24px;
+    right:36px;
+    font-size:56px;
+    cursor:pointer;
+}
+
+.light-prev,
+.light-next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    background:#00D9FF;
+    color:#07131F;
+    font-size:28px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.light-prev{ left:36px; }
+.light-next{ right:36px; }
+
+@media (max-width:768px){
+
+    .project-page{
+        padding:100px 6%;
+    }
+
+    .project-banner{
+        height:360px;
+    }
+
+    .banner-overlay{
+        left:24px;
+        right:24px;
+        bottom:24px;
+    }
+
+    .banner-overlay h1{
+        font-size:36px;
+    }
+
+    .banner-overlay p{
+        font-size:16px;
+    }
+
+}
