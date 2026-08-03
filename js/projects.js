@@ -2,6 +2,33 @@
 // Load Projects from JSON
 // =============================
 
+async function loadProjects() {
+    try {
+        const response = await fetch("data/projects.json");
+
+        if (!response.ok) {
+            throw new Error(`Failed to load projects.json: ${response.status}`);
+        }
+
+        const projects = await response.json();
+        displayProjects(projects);
+
+    } catch (error) {
+        console.error(error);
+
+        const container = document.getElementById("projects-container");
+        if (container) {
+            container.innerHTML = `
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Projects could not be loaded</h3>
+                        <p>${error.message}</p>
+                    </div>
+                </div>
+            `;
+        }
+    }
+}
 
 function displayProjects(projects) {
 
