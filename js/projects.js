@@ -1,30 +1,7 @@
 // =============================
 // Load Projects from JSON
 // =============================
-alert("projects.js loaded");
-async function loadProjects() {
 
-    console.log("Projects.js loaded");
-
-    try {
-
-        const response = await fetch("./data/projects.json");
-
-        console.log("Response:", response);
-
-        const projects = await response.json();
-
-        console.log("Projects:", projects);
-
-        displayProjects(projects);
-
-    } catch (error) {
-
-        console.error(error);
-
-    }
-
-}
 
 function displayProjects(projects) {
 
